@@ -29,16 +29,17 @@ ul {
     text-align: center;
     color: #515076;
 }
+
 .products-list {
     list-style: none;
     padding: 45px;
     margin: 0;
 }
+
 .compound {
     display: block;
     margin-top: 15px
 }
-
 
 .div {
     color: #515076;
@@ -60,6 +61,7 @@ ul {
     letter-spacing: 0%
     
 }
+
 .card-background {
     font-size: 20px;
     font-weight: 700;

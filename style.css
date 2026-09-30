@@ -22,18 +22,32 @@ ul {
 }
 
 .title {
-    font-size: 70px;
+    font-size: 78px;
+    max-width: 846px;
+    width: 100%;
     font-weight: 400;
-    line-height: 78px;
-    margin: 220;
+    line-height: 70px;
+    margin: 220px auto 110px auto;
     text-align: center;
     color: #515076;
+    position: relative;
+    z-index: 2;
 }
 
 .products-list {
+    width: 1110px;
+    height: 1191px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    gap: 45px;
     list-style: none;
-    padding: 45px;
-    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
 .compound {
@@ -59,7 +73,6 @@ ul {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0%
-    
 }
 
 .card-background {
@@ -78,6 +91,9 @@ ul {
 }
 
 .village {
+    position: relative;
+    width: 1110px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -85,15 +101,35 @@ ul {
     padding: 20px;
 }
 
+.dandelions-box {
+    position: absolute;
+    width: 790px;
+    height: 697px;
+    left: 20px;
+    top: 50px;
+    background-image: url('images/dandelions.png');
+    background-repeat: no-repeat;
+    background-position: -15px 40px;
+    background-size: contain;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
 .card {
-    background-color:rgba(247,247,255, 1);
+    background-color: rgba(247, 247, 255, 1);
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.02);
     border: 1px solid rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);
     padding-block: 25px;
     padding-left: 25px;
-    margin-right: 1025px;
+    margin-right: 0;
+    box-sizing: border-box;
+    width: 340px;
+    min-width: 340px;
+    height: 573px;
+    min-height: 573px;
 }
 
 .list {

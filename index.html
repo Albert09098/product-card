@@ -14,14 +14,21 @@
 <body>
     <div class="village">
         <div class="village__dandelions-box"></div>
-        <h1 class="village__title">Выбери свой продукт</h1>
+        <div class="village__header">
+            <h1 class="village__title">Выбери свой продукт</h1>
+            <button id="change-color-first-card">Сменить цвет первой карточки</button>
+            <button id="change-color-all-card">Сменить цвет всех карточек</button>
+            <button id="open-google">Открыть страницу Google.com</button>
+            <button id="output-console-log">Вывести сообщение в консоль лог</button>
+        </div>
         <ul class="village__products-list">
             <li class="product-card">
                 <img class="product-card__image" src="images/moisturizing-sponge.png" alt="Товар увлажняющий мусс"
                     width="290" height="245" />
                 <p class="product-card__category">для нормальной кожи</p>
                 <h2 class="product-card__title">Увлажняющий мусс</h2>
-                <div class="product-card__description">Глубоко увлажняет кожу лица, оставляя ее мягкой и гладкой.</div>
+                <div class="product-card__description">Глубоко увлажняет кожу лица, оставляя ее мягкой и гладкой.
+                </div>
                 <div class="product-card__compound">
                     <span class="product-card__compound-label">Состав:</span>
                     <ul class="product-card__ingredients-list">
@@ -103,19 +110,20 @@
                 <h2 class="product-card__title">Подарочный набор №5</h2>
                 <div class="product-card__description">Весь набор средств Invisible symphony, крем, маска, мусс и
                     гельдля умывания.</div>
-                <div class="product-card__compound">
+                <d class="product-card__compound">
                     <span class="product-card__compound-label">Состав:</span>
                     <ul class="product-card__ingredients-list">
                         <li class="product-card__ingredient">воски</li>
                         <li class="product-card__ingredient">минералы</li>
                         <li class="product-card__ingredient">масла</li>
                     </ul>
-                </div>
-                <div class="product-card__price-block">
-                    <span class="product-card__price-label">Цена</span>
-                    <span class="product-card__price-value">7 520 &#8381;</span>
-                </div>
+                    <div>
+                        <div class="product-card__price-block">
+                            <span class="product-card__price-label">Цена</span>
+                            <span class="product-card__price-value">7 520 &#8381;</span>
+                        </div>
             </li>
+            <script src="main.js"></script>
 </body>
 
 </html>

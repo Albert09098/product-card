@@ -4,11 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашнее задание</title>
+    <title>product-card</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script type="module" src="./homework-9.js"></script>
+    <div class="village">
+        <div class="village__dandelions-box"></div>
+        <div class="village__header">
+            <h1 class="village__title">Выбери свой продукт</h1>
+            <button id="change-color-first-card">Сменить цвет первой карточки</button>
+            <button id="change-color-all-card">Сменить цвет всех карточек</button>
+            <button id="open-google">Открыть страницу Google.com</button>
+            <button id="output-console-log">Вывести сообщение в консоль лог</button>
+        </div>
+        <ul class="village__products-list"></ul>
+    </div>
+
+    <template id="product-card-template">
+        <li class="product-card">
+            <img class="product-card__image" src="" alt="" width="290" height="245" />
+            <p class="product-card__category"></p>
+            <h2 class="product-card__title"></h2>
+            <div class="product-card__description"></div>
+            <div class="product-card__compound">
+                <span class="product-card__compound-label">Состав:</span>
+                <ul class="product-card__ingredients-list"></ul>
+            </div>
+            <div class="product-card__price-block">
+                <span class="product-card__price-label">Цена</span>
+                <span class="product-card__price-value"></span>
+            </div>
+        </li>
+    </template>
+    <script type="module" src="./homework-10.js"></script>
 </body>
 
 </html>
